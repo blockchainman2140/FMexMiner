@@ -1,0 +1,18 @@
+{
+  "name": "FMexMiner",
+  "version": "1.0.0",
+  "description": "FMex miner",
+  "main": "app.js",
+  "repository": "https://github.com/JasonFF/FMexMiner.git",
+  "author": "JasonFF <925784658@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "forever start ./app.js",
+    "stop": "forever stopall",
+    "clear": "forever cleanlogs"
+  },
+  "dependencies": {
+    "forever": "^1.0.0",
+    "node-fetch": "^2.6.0"
+  }
+}
