@@ -111,6 +111,8 @@ class FMex {
         },
         body: JSON.stringify(body)
       }).then(res => res.json()).then(res => {
+        console.log('下单情况')
+        console.log(res)
         return res.data
       })
     }

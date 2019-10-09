@@ -37,7 +37,6 @@ async function clearPosition() {
           }).then(res => {
             console.log('平仓')
             console.log(it.price, it.quantity)
-            console.log(res)
           })
         }
       }
