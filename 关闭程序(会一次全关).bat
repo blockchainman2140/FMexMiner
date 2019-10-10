@@ -1,2 +1,1 @@
-npm run stop
-npm run cancel
+npm run stop & npm run cancel
