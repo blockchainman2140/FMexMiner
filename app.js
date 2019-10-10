@@ -1,15 +1,16 @@
 const FMex = require('./FMex')
+const userConfig = require('./config')
 
 const $CONFIG = {
-  minPercent: 1, // 挂单挖矿的下限，离最新价的百分比，如果是 1% 则填写 1，千万不要填写0.01
-  maxPercent: 5, // 挂单挖矿的上限，离最新价的百分比，如果是 1% 则填写 1，千万不要填写0.01
-  perAmount: 2, // 每个订单多少张，最多只能挂50个订单，自己算多少合适。
+  minPercent: userConfig.minPercent, // 挂单挖矿的下限，离最新价的百分比，如果是 1% 则填写 1，千万不要填写0.01
+  maxPercent: userConfig.maxPercent, // 挂单挖矿的上限，离最新价的百分比，如果是 1% 则填写 1，千万不要填写0.01
+  perAmount: userConfig.perAmount, // 每个订单多少张，最多只能挂50个订单，自己算多少合适。
 }
 
 const fm = new FMex({
-  key: 'a69142c0c99554d8ea2baafa958fda4b4', // 输入您的key
-  secret: 'a9c33a157243f4d859dc2b409361b3094', // 输入您的secret
-  BASEURL: "https://api.testnet.fmex.com" // 请求的baseUrl, 目前是模拟盘，正式还未规定。
+  key: userConfig.key, // 输入您的key
+  secret: userConfig.secret, // 输入您的secret
+  BASEURL: userConfig.BASEURL // 请求的baseUrl, 目前是模拟盘，正式还未规定。
 })
 
 async function clearOrders(lastPrice) {

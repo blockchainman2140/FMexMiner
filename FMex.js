@@ -3,7 +3,7 @@ const crypto = require('crypto');
 
 function fetch(url, config) {
   return nodeFetch(url, {
-    timeout: 5000,
+    timeout: 10000,
     ...config
   })
 }

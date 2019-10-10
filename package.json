@@ -7,9 +7,10 @@
   "author": "JasonFF <925784658@qq.com>",
   "license": "MIT",
   "scripts": {
-    "start": "forever start ./app.js",
+    "start": "forever start --minUptime 10 --spinSleepTime 10 ./app.js",
     "stop": "forever stopall",
-    "clear": "forever cleanlogs"
+    "clear": "forever cleanlogs",
+    "cancel": "node ./cancel.js"
   },
   "dependencies": {
     "forever": "^1.0.0",
