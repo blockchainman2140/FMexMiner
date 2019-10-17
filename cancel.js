@@ -7,7 +7,7 @@ const fm = new FMex({
   BASEURL: userConfig.BASEURL // 请求的baseUrl, 目前是模拟盘，正式还未规定。
 })
 
-async function clearOrders() {
+async function cleanOrders() {
   let orders = await fm.getOrders().then(res => res.results)
   orders.forEach(it => {
       fm.cancelOrder(it.id).then(res => {
@@ -17,4 +17,4 @@ async function clearOrders() {
   })
 }
 
-clearOrders()
+cleanOrders()
