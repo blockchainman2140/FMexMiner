@@ -1,7 +1,7 @@
 module.exports = {
-  key: 'a52bc29b273ab4f6f8395a5b5b329d34b', // 输入您的key
-  secret: 'a9c4f289ace6942df8bc558df8f9bbe74', // 输入您的secret
-  BASEURL: "https://api.testnet.fmex.com", // 请求的baseUrl, 目前是模拟盘，正式还未规定。
+  key: 'c07fc99f6bff48608edbd92ef7dca73c', // 输入您的key
+  secret: '28d5929b87274df882ab51ee563c9b0b', // 输入您的secret
+  BASEURL: "https://api.fmex.com", // 请求的baseUrl, 目前是模拟盘，正式还未规定。
   guadan: { // 挂单程序的配置写在这里
     minPercent: 1, // 挂单挖矿的下限，离最新价的百分比，如果是 1% 则填写 1，千万不要填写0.01
     maxPercent: 5, // 挂单挖矿的上限，离最新价的百分比，如果是 1% 则填写 1，千万不要填写0.01
